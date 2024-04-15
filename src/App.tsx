@@ -1,17 +1,18 @@
 import "./App.css";
 import * as React from "react";
-import { ReactPhotoSphereViewer } from "react-photo-sphere-viewer";
 
 import { motion } from "framer-motion";
 
+import Header from "./Components/Header";
+import Content from "./Components/Content";
+import Footer from "./Components/Footer";
+
 function App() {
   return (
-    <div className='App h-[100hv] flex justify-center align-middle'>
-      <ReactPhotoSphereViewer
-        src='1.jpg'
-        height={"500px"}
-        width={"500px"}
-      ></ReactPhotoSphereViewer>
+    <div className='App w-screen flex flex-col '>
+      <Header />
+      <Content />
+      <Footer />
     </div>
   );
 }
